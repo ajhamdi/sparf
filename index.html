@@ -8,7 +8,7 @@
   <meta name="keywords" content="SPARF, Diffusion, 3D, Radiance Fields, NeRF, 3D Object">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SPARF: Large-Scale Learning of 3D Sparse Radiance Fields from Few Input Images</title>
-
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
@@ -72,7 +72,7 @@
               <div class="publication-links">
                 <!-- PDF Link. -->
                 <span class="link-block">
-                  <a href="https://sirwyver.github.io/SPARF/static/assets/SPARF.pdf"
+                  <a href="https://abdullahamdi.com/sparf/static/assets/SPARF.pdf"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <svg class="svg-inline--fa fa-file-pdf fa-w-12" aria-hidden="true" focusable="false"
@@ -168,7 +168,7 @@
         </script>
 
         <h2 class=" subtitle has-text-centered">
-          <span class="dnerf">sparf</span> is a large-scale sparse radiance field dataset consisting of ~ 1 million SRF with multiple voxel resolutions (32, 128, and 512) and 17 million posed images with a resolution of 400 X 400.
+          <span class="dnerf">sparf</span> is a large-scale sparse radiance field dataset consisting of ~ 1 million SRFs with multiple voxel resolutions (32, 128, and 512) and 17 million posed images with a resolution of 400 X 400.
            Furthermore, we propose SuRFNet, a pipline to generate SRFs conditioned on input images, achieving SOTA on ShapeNet nove view synthesis from one or few images.
         </h2>
 
@@ -308,34 +308,100 @@ the task of unconstrained novel view synthesis based on few views on ShapeNet as
   <section class="section">
     <div class="container is-max-desktop">
 
-      <!-- Masked completion -->
+      
       <h3 class="title is-4">Multi-Resolution Sparse Radiance Fields</h3>
       <span class="dnerf">sparf</span> .....
-      <div class="content has-text-justified">
-        <p>
 
+        
+      <!-- <div class="content has-text-justified">
+        <p>
+      <h4 class="title is-4">32</h4>
         </p>
-      </div>
+      </div> -->
       <div class="content has-text-centered">
         <div class="vsc-controller"></div>
-        <img src="static/assets/cameras/train_animation.gif"
-          width="49%">
-        <video id="masking_examples" autoplay="" muted="" loop="" width="50%">
-          <source src="static/assets/teaser/vox512.mp4" type="video/mp4">
+        <!-- <img src="static/assets/cameras/train_animation.gif"
+          width="49%"> -->
+        <video id="masking_examples" autoplay="" muted="" loop="" width="33%">
+          <source src="static/assets/multires/s1/vox32.mp4" type="video/mp4">
+        </video>
+        <video id="masking_examples" autoplay="" muted="" loop="" width="33%">
+          <source src="static/assets/multires/s1/vox128.mp4" type="video/mp4">
+        </video>
+        <video id="masking_examples" autoplay="" muted="" loop="" width="33%">
+          <source src="static/assets/multires/s1/vox512.mp4" type="video/mp4">
         </video>
         <script>
           var v = document.getElementById("teaser");
           v.playbackRate = 1.0;
         </script>
+                <!-- <h2 class=" subtitle has-text-centered">
+        <div class="column is-3">
+          <div class="content">
+           32
+      </div>
+      </div>
+      </h2> -->
+            <div class="content has-text-centered">
+              <div class="vsc-controller"></div>
+              <!-- <img src="static/assets/cameras/train_animation.gif"
+                      width="49%"> -->
+              <video id="masking_examples" autoplay="" muted="" loop="" width="33%">
+                <source src="static/assets/multires/s2/vox32.mp4" type="video/mp4">
+              </video>
+              <video id="masking_examples" autoplay="" muted="" loop="" width="33%">
+                <source src="static/assets/multires/s2/vox128.mp4" type="video/mp4">
+              </video>
+              <video id="masking_examples" autoplay="" muted="" loop="" width="33%">
+                <source src="static/assets/multires/s2/vox512.mp4" type="video/mp4">
+              </video>
+              <script>
+                var v = document.getElementById("teaser");
+                v.playbackRate = 1.0;
+              </script>
+            <div class="content has-text-centered">
+              <div class="vsc-controller"></div>
+              <!-- <img src="static/assets/cameras/train_animation.gif"
+                      width="49%"> -->
+              <video id="masking_examples" autoplay="" muted="" loop="" width="33%">
+                <source src="static/assets/multires/s3/vox32.mp4" type="video/mp4">
+              </video>
+              <video id="masking_examples" autoplay="" muted="" loop="" width="33%">
+                <source src="static/assets/multires/s3/vox128.mp4" type="video/mp4">
+              </video>
+              <video id="masking_examples" autoplay="" muted="" loop="" width="33%">
+                <source src="static/assets/multires/s3/vox512.mp4" type="video/mp4">
+              </video>
+              <script>
+                var v = document.getElementById("teaser");
+                v.playbackRate = 1.0;
+              </script>
+            <div class="content has-text-centered">
+              <div class="vsc-controller"></div>
+              <!-- <img src="static/assets/cameras/train_animation.gif"
+                      width="49%"> -->
+              <video id="masking_examples" autoplay="" muted="" loop="" width="33%">
+                <source src="static/assets/multires/s4/vox32.mp4" type="video/mp4">
+              </video>
+              <video id="masking_examples" autoplay="" muted="" loop="" width="33%">
+                <source src="static/assets/multires/s4/vox128.mp4" type="video/mp4">
+              </video>
+              <video id="masking_examples" autoplay="" muted="" loop="" width="33%">
+                <source src="static/assets/multires/s4/vox512.mp4" type="video/mp4">
+              </video>
+              <script>
+                var v = document.getElementById("teaser");
+                v.playbackRate = 1.0;
+              </script>
       </div>
     </section>
 
     <section class="section">
       <div class="container is-max-desktop">
     
-        <!-- Masked completion -->
+        
         <h3 class="title is-4">SPARF: Posed Multi-View Dataset</h3>
-        <span class="dnerf">sparf</span> ..... SPARF Table?
+        <span class="dnerf">sparf</span> as a posed multi-view dataset.
         <div class="content has-text-justified">
           <p>
     
@@ -343,20 +409,26 @@ the task of unconstrained novel view synthesis based on few views on ShapeNet as
         </div>
         <div class="content has-text-centered">
           <div class="vsc-controller"></div>
-          <img src="static/assets/cameras/train_animation.gif" width="49%">
-          <video id="masking_examples" autoplay="" muted="" loop="" width="50%">
-            <source src="static/assets/teaser/vox512.mp4" type="video/mp4">
-          </video>
+              <video id="masking_examples" autoplay="" muted="" loop="" width="49%">
+                <source src="static/assets/images/images1.mp4" type="video/mp4">
+              </video>
+              <video id="masking_examples" autoplay="" muted="" loop="" width="50%">
+                <source src="static/assets/images/images2.mp4" type="video/mp4">
+              </video>
           <script>
             var v = document.getElementById("teaser");
             v.playbackRate = 1.0;
           </script>
+                      <div class="content has-text-centered">
+                        <div class="vsc-controller"></div>
+                        <img src="static/assets/images/table.png" width="100%">
+
         </div>
     </section>
         <section class="section">
           <div class="container is-max-desktop">
         
-            <!-- Masked completion -->
+            
             <h3 class="title is-4">Whole SRFs Vs. Partial SRFs</h3>
             partials gif ... mesh extraction ???
             <div class="content has-text-justified">
@@ -366,9 +438,12 @@ the task of unconstrained novel view synthesis based on few views on ShapeNet as
             </div>
             <div class="content has-text-centered">
               <div class="vsc-controller"></div>
-              <img src="static/assets/cameras/train_animation.gif" width="49%">
+<model-viewer
+  alt="Neil Armstrong"
+  src="assets/mesh/0.obj" shadow-intensity="1" camera-controls touch-action="pan-y" width="30%">
+</model-viewer>
               <video id="masking_examples" autoplay="" muted="" loop="" width="50%">
-                <source src="static/assets/teaser/vox512.mp4" type="video/mp4">
+                <source src="static/assets/images/images2.mp4" type="video/mp4">
               </video>
               <script>
                 var v = document.getElementById("teaser");
@@ -379,7 +454,7 @@ the task of unconstrained novel view synthesis based on few views on ShapeNet as
         <section class="section">
           <div class="container is-max-desktop">
         
-            <!-- Masked completion -->
+            
             <h3 class="title is-4">SuRFNet: Learning to Generate Sparse Radiance Fields</h3>
             Pipeline ....., 512 generation?
             <div class="content has-text-justified">
@@ -403,7 +478,7 @@ the task of unconstrained novel view synthesis based on few views on ShapeNet as
     <section class="section">
       <div class="container is-max-desktop">
     
-        <!-- Masked completion -->
+        
         <h3 class="title is-4">Novel Views Synthesis from a Single View</h3>
         SuRFNet naturally enables novel views Synthesis from a single view by cnoditioning the
         output SRF on the partial SRFS based on the few input views. This piepline achieves state-of-the-art on novel views
@@ -485,7 +560,7 @@ the task of unconstrained novel view synthesis based on few views on ShapeNet as
   <footer class="footer">
     <div class="container">
       <div class="content has-text-centered">
-        <a class="icon-link" href="https://sirwyver.github.io/SPARF/static/assets/SPARF.pdf">
+        <a class="icon-link" href="https://abdullahamdi.com/sparf/static/assets/SPARF.pdf">
           <svg class="svg-inline--fa fa-file-pdf fa-w-12" aria-hidden="true" focusable="false" data-prefix="fas"
             data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
             <path fill="currentColor"
@@ -493,7 +568,7 @@ the task of unconstrained novel view synthesis based on few views on ShapeNet as
             </path>
           </svg><!-- <i class="fas fa-file-pdf"></i> Font Awesome fontawesome.com -->
         </a>
-        <a class="icon-link" href="https://github.com/sirwyver" disabled="">
+        <a class="icon-link" href="https://github.com/ajhamdi" disabled="">
           <svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" focusable="false" data-prefix="fab"
             data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg="">
             <path fill="currentColor"
