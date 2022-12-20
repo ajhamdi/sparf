@@ -8,7 +8,6 @@
   <meta name="keywords" content="SPARF, Diffusion, 3D, Radiance Fields, NeRF, 3D Object">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SPARF: Large-Scale Learning of 3D Sparse Radiance Fields from Few Input Images</title>
-<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
@@ -38,6 +37,7 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+
 </head>
 <body data-new-gr-c-s-check-loaded="14.1089.0" data-gr-ext-installed="" class="vsc-initialized">
 
@@ -412,7 +412,7 @@ the task of unconstrained novel view synthesis based on few views on ShapeNet as
               <video id="masking_examples" autoplay="" muted="" loop="" width="49%">
                 <source src="static/assets/images/images1.mp4" type="video/mp4">
               </video>
-              <video id="masking_examples" autoplay="" muted="" loop="" width="50%">
+              <video id="masking_examples" autoplay="" muted="" loop="" width="49%">
                 <source src="static/assets/images/images2.mp4" type="video/mp4">
               </video>
           <script>
@@ -425,32 +425,72 @@ the task of unconstrained novel view synthesis based on few views on ShapeNet as
 
         </div>
     </section>
-        <!-- <section class="section">
+        <section class="section">
           <div class="container is-max-desktop">
         
             
-            <h3 class="title is-4">Whole SRFs Vs. Partial SRFs</h3>
-            partials gif ... mesh extraction ???
+            <h3 class="title is-4">Mesh Extraction from SRFs</h3>
+            Since Sparse Radiance Fields (SRFs) are explicit 3D structures, obtaining high quality 3D mesh is straightforward.
             <div class="content has-text-justified">
               <p>
-        
+
               </p>
             </div>
             <div class="content has-text-centered">
               <div class="vsc-controller"></div>
-<model-viewer
-  alt="Neil Armstrong"
-  src="assets/mesh/0.obj" shadow-intensity="1" camera-controls touch-action="pan-y" width="30%">
-</model-viewer>
-              <video id="masking_examples" autoplay="" muted="" loop="" width="50%">
-                <source src="static/assets/images/images2.mp4" type="video/mp4">
+              <video id="masking_examples" autoplay="" muted="" loop="" width="20%">
+                <source src="static/assets/mesh/0.mp4" type="video/mp4">
               </video>
               <script>
                 var v = document.getElementById("teaser");
                 v.playbackRate = 1.0;
               </script>
+              <iframe width="250" height="250" style="border:1px solid #eeeeee;"
+                src="https://3dviewer.net/embed.html#model=https://abdullahamdi.com/sparf/static/assets/mesh/0.obj$camera=169.48379,370.18722,427.39485,255.46234,255.54915,255.43774,0.00000,1.00000,0.00000,45.00000$cameramode=perspective$envsettings=fishermans_bastion,off$backgroundcolor=255,255,255,255$defaultcolor=200,200,200$edgesettings=off,0,0,0,1">
+              </iframe>
+              <!-- <video id="masking_examples" autoplay="" muted="" loop="" width="20%">
+                <source src="static/assets/mesh/1.mp4" type="video/mp4">
+              </video>
+              <script>
+                var v = document.getElementById("teaser");
+                v.playbackRate = 1.0;
+              </script>
+              <iframe width="250" height="250" style="border:1px solid #eeeeee;"
+                src="https://3dviewer.net/embed.html#model=https://abdullahamdi.com/sparf/static/assets/mesh/1.obj$camera=169.48379,370.18722,427.39485,255.46234,255.54915,255.43774,0.00000,1.00000,0.00000,45.00000$cameramode=perspective$envsettings=fishermans_bastion,off$backgroundcolor=255,255,255,255$defaultcolor=200,200,200$edgesettings=off,0,0,0,1">
+              </iframe> -->
+              <video id="masking_examples" autoplay="" muted="" loop="" width="20%">
+                <source src="static/assets/mesh/2.mp4" type="video/mp4">
+              </video>
+              <script>
+                var v = document.getElementById("teaser");
+                v.playbackRate = 1.0;
+              </script>
+              <iframe width="250" height="250" style="border:1px solid #eeeeee;"
+                src="https://3dviewer.net/embed.html#model=https://abdullahamdi.com/sparf/static/assets/mesh/2.obj$camera=169.48379,370.18722,427.39485,255.46234,255.54915,255.43774,0.00000,1.00000,0.00000,45.00000$cameramode=perspective$envsettings=fishermans_bastion,off$backgroundcolor=255,255,255,255$defaultcolor=200,200,200$edgesettings=off,0,0,0,1">
+              </iframe>
+              <video id="masking_examples" autoplay="" muted="" loop="" width="20%">
+                <source src="static/assets/mesh/3.mp4" type="video/mp4">
+              </video>
+              <script>
+                var v = document.getElementById("teaser");
+                v.playbackRate = 1.0;
+              </script>
+              <iframe width="250" height="250" style="border:1px solid #eeeeee;"
+                src="https://3dviewer.net/embed.html#model=https://abdullahamdi.com/sparf/static/assets/mesh/3.obj$camera=169.48379,370.18722,427.39485,255.46234,255.54915,255.43774,0.00000,1.00000,0.00000,45.00000$cameramode=perspective$envsettings=fishermans_bastion,off$backgroundcolor=255,255,255,255$defaultcolor=200,200,200$edgesettings=off,0,0,0,1">
+              </iframe>
+              <video id="masking_examples" autoplay="" muted="" loop="" width="20%">
+                <source src="static/assets/mesh/4.mp4" type="video/mp4">
+              </video>
+              <script>
+                var v = document.getElementById("teaser");
+                v.playbackRate = 1.0;
+              </script>
+              <iframe width="250" height="250" style="border:1px solid #eeeeee;"
+                src="https://3dviewer.net/embed.html#model=https://abdullahamdi.com/sparf/static/assets/mesh/4.obj$camera=169.48379,370.18722,427.39485,255.46234,255.54915,255.43774,0.00000,1.00000,0.00000,45.00000$cameramode=perspective$envsettings=fishermans_bastion,off$backgroundcolor=255,255,255,255$defaultcolor=200,200,200$edgesettings=off,0,0,0,1">
+              </iframe>
+
             </div>
-        </section> -->
+        </section>
         <section class="section">
           <div class="container is-max-desktop">
         
